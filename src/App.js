@@ -19,7 +19,9 @@ class App extends Component {
 
         <div className="wrapper">
 
+
           <Header/>
+        
 
       <div className="body">
    <section id="correo" className="correo">
