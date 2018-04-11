@@ -98,7 +98,8 @@ vertical-aling:top;
                                                                       /* Home */
 
 .body {
-  /* margin: 0px; */
+  margin: 0px;
+  padding-top: 0px;
   /* background: #0A1124; */
   /*background-image: url('../images/background.png');*/
   /* background-size: 100%; */
@@ -224,9 +225,11 @@ vertical-aling:top;
 @media all and (min-width: 800px) {
   .trabajos    { flex: 3 0px; }
   .padre    { flex: 3 0px; }
+  .contactPadre    { flex: 3 0px; }
   .correo { order: 1; }
   .trabajos { order: 2; }
   .padre { order: 2; }
+  .contactPadre { order: 2; }
   .redes { order: 3; }
 }
 
@@ -239,45 +242,95 @@ vertical-aling:top;
     /* display: inline-block; */
     /* margin: auto; */
     /* width:90%; */
-    height:800px;
+    height:auto;
     /* height:inherit; */
     border: 1px solid red;
     display: flex;
     justify-content: center;
 }
 .hijo{
-  width:800px;
-  height:100%;
+  width:auto;
+  max-width: none;
+  height:auto;
   background: green;
   border: 1px solid blue;
   display: flex;
   justify-content:center;
   flex-direction: column;
+  flex-grow: 1;
 }
 .hijoDosUno {
   border: 1px solid red;
-  flex-grow: 9;
+  flex-grow: 1;
+  /* width: 200px; */
 }
+.imagenPrincipal{
+  width: auto;
+  display: inline-block;
+}
+
 .hijoDosDos {
   border: 1px solid red;
+  /* flex-grow: 1; */
+  display: flex;
+  justify-content:center;
+  align-content: center;
   flex-grow: 1;
+}
+.choose{
+  width:308px;
+  height: 78px;
+  border: 1px solid white;
 }
 
 .hijoTresUno {
   border: 1px solid red;
   flex-grow: 1;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  /* align-content: flex-start; */
+}
+.projdesc{
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+}
+.projSpace{
+  margin-left: 56px;
 }
 .hijoTresDos {
   border: 1px solid red;
   flex-grow: 1;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-content: flex-start;
 }
 .hijoTresTres {
   border: 1px solid red;
   flex-grow: 3;
+  font-size: 28px;
+  text-align: left;
 }
 .hijoTresCuatro {
   border: 1px solid red;
   flex-grow: 1;
+}
+
+@media all and (max-width: 1366px) {
+  .imagenPrincipal    { width:750px; }
+}
+
+@media all and (max-width: 800px) {
+  .imagenPrincipal    { width:400px; }
+  .padre  { flex-direction: column;}
+  .projdesc  {  justify-content:center; }
+  .hijoTresTres {  font-size: 21px;}
+}
+@media screen and (max-width: 740px) {
+  .padre  { flex-direction: column;}
+  .hijoTresTres {  font-size: 16px;}
 }
 
                                                             /* About */
@@ -327,4 +380,84 @@ vertical-aling:top;
 .aboutHijoTresCuatro {
   border: 1px solid red;
   flex-grow: 1;
+}
+
+                                                            /* Contact */
+
+.contactPadre{
+  border: 1px solid red;
+    /* display: inline-block; */
+    /* margin: auto; */
+  /* width:600px; */
+    height:800px;
+    /* height:inherit; */
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+.contactHijoUno{
+width:41%;
+height:100%;
+background: green;
+border: 1px solid blue;
+display: flex;
+justify-content:center;
+flex-direction: column;
+/* flex-grow: 1; */
+}
+.contactHijoUnoUno {
+border: 1px solid red;
+flex-grow: 1;
+text-align: center;
+font-size: 21px;
+}
+.contactHijoUnoDos {
+border: 1px solid red;
+flex-grow: 3;
+display: flex;
+justify-content:space-between;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.contactBox{
+  width:290px;
+  height: 74px;
+  border: 1px solid white;
+}
+.contactHijoUnoTres {
+border: 1px solid red;
+flex-grow: 7;
+display: flex;
+justify-content:space-between;
+flex-direction:column;
+/* flex-wrap: wrap; */
+}
+.contactMensajeUno{
+text-align: left;
+}
+.contactMensajeBox{
+  width:100%;
+  height: 74px;
+  border: 1px solid white;
+  flex-grow: 2;
+}
+.contactMensajeDos{
+text-align: left;
+}
+.contactHijoUnoCuatro {
+border: 1px solid red;
+flex-grow: 2;
+display: flex;
+justify-content:flex-end;
+}
+.send{
+  width:171px;
+  height: 31px;
+  border: 1px solid white;
+  text-align: left;
+  font-size: 37.8px;
+}
+
+@media all and (min-width: 800px) {
+  .contactHijoUnoDos    { justify-content:center;; }
 }

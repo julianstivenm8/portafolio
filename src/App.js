@@ -29,9 +29,9 @@ class App extends Component {
 
    </section>
     {/* <Home/> */}
-    {/* <Projects/> */}
+    <Projects/>
     {/* <About/> */}
-    <Contact/>
+    {/* <Contact/> */}
   <section id="redes" className="redes">
     <div className="contIzq">
     <figure className="be">
