@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Lsvg from '../icons/components/Lsvg.js';
+import Header from '../header/header.js'
+
 class Projects extends Component {
 
   render() {

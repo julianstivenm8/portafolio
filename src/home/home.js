@@ -7,6 +7,7 @@ import In from '../icons/components/in.js'
 import Be from '../icons/components/be.js'
 import Logo from '../icons/components/logo.js'
 import Lsvg from '../icons/components/Lsvg.js'
+import Header from '../header/header.js'
 class Home extends Component {
 
   render() {
@@ -50,7 +51,6 @@ class Home extends Component {
       {// <Projectlist data={data}/>
     }
   </div>
-
     );
   }
 }

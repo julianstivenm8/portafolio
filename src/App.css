@@ -92,7 +92,9 @@ vertical-aling:top;
 display: none;
 
 }
-
+.headerCell{
+  display: none;
+}
 
 @media screen and (max-width: 740px) {
   .header{flex-direction: row;}
@@ -101,17 +103,24 @@ display: none;
 }
 @media screen and (max-width: 600px) {
   .header  {
-    flex-direction: column;
+ flex-direction: column;
     border: 1px solid white;
     background-color: rgba(10, 17, 36, .8);
-     position:static;
+     position:absolute;
      top: 0;
-     left: 0;
+     left: -100%;
+     width: 100%;
+     right:  100%;
+     bottom: 0;
      z-index: 2;
+     transition: .3s;
    }
-   /* .portada {
-     position: static;
-   } */
+   .header.active{
+     left: 0;
+   }
+   .headerCell{
+     display:inline;
+   }
    .hamburguesa{
      width: 75px;
      height: 75px;
