@@ -16,36 +16,64 @@ class Home extends Component {
 
         {/* <div className="centro contenedor"> */}
 
-           <article className="trabajo01">
-             <h4 className="textinfo">2017</h4>
-             <figure className="ilustracion">
-               <Lsvg
-                 size={478}
-                 color="white"
-               />
-              { //<img className="laCasaImg" src="./resources/images/home/ilustracionLaCasaDelTurbo.png" alt="ilustracionLaCasaDelTurbo"/>
-}
-             </figure>
-             <div className="descripcion">
-               <h2 className="textProjet">La casa del turbo</h2>
-               <h3 className="textinfo">web page</h3>
-             </div>
-             </article>
+
+
+             <article className="trabajo01">
+               <h4 className="textinfo">2016</h4>
+               <figure className="ilustracion">
+              <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
+               </figure>
+               <div className="descripcion">
+                 <h2 className="textProjet">Verdindung</h2>
+                 <h3 className="textinfo">game</h3>
+               </div>
+               </article>
+
+               <article className="trabajo01">
+                 <h4 className="textinfo">2017</h4>
+                 <figure className="ilustracion">
+                <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
+                 </figure>
+                 <div className="descripcion">
+                   <h2 className="textProjet">Reina</h2>
+                   <h3 className="textinfo">Movil App</h3>
+                 </div>
+                 </article>
 
              <article className="trabajo01">
                <div className="descripcion">
-                 <h2 className="textProjet">La casa del turbo</h2>
-                 <h3 className="textinfo">web page</h3>
+                 <h2 className="textProjet">Monucks</h2>
+                 <h3 className="textinfo">business project</h3>
                </div>
                <figure className="ilustracion">
-                 <Lsvg
-                   size={478}
-                   color="white"
-                 />
+                 <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
                </figure>
-                <h4 className="textinfo">2017</h4>
-
+                <h4 className="textinfo">2016</h4>
                </article>
+
+               <article className="trabajo01">
+                 <h4 className="textinfo">2017</h4>
+                 <figure className="ilustracion">
+                <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
+                 </figure>
+                 <div className="descripcion">
+                   <h2 className="textProjet">Handle Turtle</h2>
+                   <h3 className="textinfo">parametric</h3>
+                 </div>
+                 </article>
+
+               <article className="trabajo01">
+                 <h4 className="textinfo">2017</h4>
+                 <figure className="ilustracion">
+                <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
+                 </figure>
+                 <div className="descripcion">
+                   <h2 className="textProjet">La casa del turbo</h2>
+                   <h3 className="textinfo">branding</h3>
+                 </div>
+                 </article>
+
+
 
        {/* </div> */}
       {// <Projectlist data={data}/>

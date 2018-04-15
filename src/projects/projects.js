@@ -19,7 +19,7 @@ class Projects extends Component {
             <div className='choose'></div>
          </div>
        </div>
-       <div className='hijo'>
+       <div className='hijoDos'>
          <div className='hijoTresUno '>
            <h2 className='projdesc'>La casa del turbo</h2>
            <div className='projdesc'>

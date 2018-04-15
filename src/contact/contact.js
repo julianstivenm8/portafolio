@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Header from '../header/header.js'
+import FlechaContact from '../icons/components/flechaContact.js'
 class Contact extends Component {
 
   render() {
@@ -22,6 +23,10 @@ class Contact extends Component {
      </div>
     <div className='contactHijoUnoCuatro '>
        <div className='send'>Send</div>
+       <FlechaContact
+         size={45}
+         color="white"
+       />
     </div>
   </div>
  </div>

@@ -3,6 +3,7 @@ import '../App.css';
 import Logo from '../icons/components/logo.js';
 import MenuHamburguesa from '../icons/components/menu.js';
 import Xmenu from '../icons/components/xMenu.js';
+import LogoPeque from '../icons/components/logoPeque.js';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
 // var UniqeIdMixin = require('unique-id-mixin');
@@ -93,30 +94,25 @@ handleGoContact =(event)=>(
                 color="white"
               />
               </div>
-              <Logo
-                height={47.8}
-                width={100}
+              <LogoPeque
+                size={100}
                 color="white"
-                viewBox="0 0 300 145"
               />
             </figure>
           </div>
-          {/* window.matchMedia('(max-width:600px)') */}
-      {/* {this.state.modalVisible &&  */}
         <header id="header" className="header" style={{left : this.state.backMenu + '%'}}>
 
           <figure className="logoCel">
             <div  className="hamburguesa" id='burgerBack' onClick={this.handleCloseClick}>
-            <MenuHamburguesa
+            <Xmenu
               size={45}
               color="white"
             />
             </div>
-            <Logo
-              height={47.8}
-              width={100}
+
+            <LogoPeque
+              size={100}
               color="white"
-              viewBox="0 0 300 145"
             />
           </figure>
           <nav className="menuUno">
@@ -140,12 +136,7 @@ handleGoContact =(event)=>(
               </li>
           </nav>
           <figure className="logo">
-            <Logo
-              height={120}
-              width={251}
-              color="white"
-              viewBox="0 0 300 145"
-            />
+            <img className="imgLogo" src={require("../resources/images/home/logoGrande.png")} alt="julianMadrid"/>
           </figure>
           <nav className="menuUno">
               <li>

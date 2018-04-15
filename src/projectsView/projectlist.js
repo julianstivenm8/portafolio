@@ -4,7 +4,7 @@ import Play from '../icons/components/play.js'
 
 function Projectlist (props) {
     console.log(props.data);
-    const projectlist =props.data.categories[0].playlist
+    const projectlist =props.data.categories[1].playlist
     return(
 <div>
   <Play
