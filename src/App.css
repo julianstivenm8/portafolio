@@ -380,12 +380,21 @@ display: none;
   flex-direction: row;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
+  list-style: none;
+  text-decoration: none;
 }
+
+.projdesc h3 {
+	text-decoration: none;
+  list-style: none;
+	}
 .projSpace{
   color: white;
   margin-left: 56px;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
+  list-style: none;
+  text-decoration: none;
 }
 .hijoTresDos {
   flex-grow: 1;

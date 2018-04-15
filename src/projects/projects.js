@@ -1,9 +1,9 @@
 import React from "react";
 import '../App.css';
 import Lsvg from '../icons/components/Lsvg.js';
-import Header from '../header/header.js'
-import { Route, Link  } from 'react-router-dom'
-// import Topics from './topics.js'
+import Header from '../header/header.js';
+import { Route, Link  } from 'react-router-dom';
+// import DemoCarousel  from './slice.js'
 
 const Topic = ({ match }) => (
   <div>
@@ -12,14 +12,14 @@ const Topic = ({ match }) => (
 );
 
 const Projects = ({ match }) => (
+
   <div className="padre">
 
     <div className='hijo'>
       <div className='hijoDosUno'>
    {/* <img src={Imagen} alt="ilustracionLaCasaDelTurbo"/> */}
-   <img src={require('../resources/images/project/portafolioWeb.jpg')}
-   className='imagenPrincipal'
-   />
+{/* <DemoCarousel /> */}
+   <img src={require('../resources/images/project/portafolioWeb.jpg')} className='imagenPrincipal'/>
       </div>
       <div className='hijoDosDos '>
          <div className='choose'></div>
