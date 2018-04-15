@@ -12,6 +12,7 @@ import Header from './header/header.js'
 import About from './about/about.js'
 import Contact from './contact/contact.js'
 import { BrowserRouter as Router, Route, Link  } from 'react-router-dom'
+// import Topics from './projects/topics.js'
 class App extends Component {
 
 state={
@@ -48,6 +49,7 @@ state={
 
         <Route exact path='/' component={Home}/>
         <Route path='/projects' component={Projects}/>
+        {/* <Route path='/projects' component={Topics}/> */}
         <Route path='/about' component={About}/>
         <Route path='/contact' component={Contact}/>
 
