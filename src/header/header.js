@@ -14,29 +14,8 @@ class Header extends Component {
     burgerEnter: 'burgerEnter',
     backMenu: -100,
     changeView:0,
-     // burgerEnter: this.getNextUid('hamburguesaEnter'),
-     // burgerBack: this.getNextUid('hamburguesaBack'),
   }
 
-
-
-//  Mov (){
-//    // this.setState({burgerEnter:this.getNextUid('hamburguesaEnter') });
-//    // this.setState({burgerBack:this.getNextUid('hamburguesaBack') })
-//    // this.state.burgerEnter: setState.document.getElementsById('hamburguesaEnter'),
-//    // this.state.burgerBack: setState.getElementsById('hamburguesaBack'),
-//    this.state.burgerEnter.addEventListener(
-//      'touchstart',function() {
-//        this.state.burgerBack.classList.toggle('active');
-//      }
-//    )
-// }
-// handleClick=(event)=>{
-//
-//        if(this.state.burgerEnter) {
-//        this.state.burgerBack.classList.toggle('active');
-//        }
-// }
 handleOpenClick = (event) =>{
   this.setState({
       modalVisible:true,
@@ -73,16 +52,7 @@ handleGoContact =(event)=>(
   })
 )
 
-
   render() {
-    // let burgerEnter = UniqeIdMixin.getNextUid('date-input'),
-    //       burgerBack = this.getNextUid('date-hint');
-    //       this.state.burgerEnter.addEventListener(
-    //         'touchstart',function() {
-    //           this.state.burgerBack.classList.toggle('active');
-    //         }
-    //       )
-
 
     return (
         <div>
@@ -100,7 +70,9 @@ handleGoContact =(event)=>(
               />
             </figure>
           </div>
-        <header id="header" className="header" style={{left : this.state.backMenu + '%'}}>
+        <header id="header" className="header" style={
+          {left : this.state.backMenu + '%'}
+         }>
 
           <figure className="logoCel">
             <div  className="hamburguesa" id='burgerBack' onClick={this.handleCloseClick}>
@@ -115,9 +87,8 @@ handleGoContact =(event)=>(
               color="white"
             />
           </figure>
-          <nav className="menuUno">
-
-              <li >
+          <nav className="menuUno" >
+              <li>
                 <Link to='/' >
                 <a className="textMenu" onClick={this.handleGoHome} href="index.html">
                 Home

@@ -70,13 +70,14 @@ vertical-aling:top;
   display: flex;
   justify-content:space-around;
   align-items: center;
-
+  animation-name:menuUno;
+  animation-duration: 1s;
 
 }
 .menuUno{
   display: inline-block;
     list-style: none;
-
+transition: 1s 1s ease;
 }
 .imgLogo{
   width: 80%;
@@ -86,6 +87,37 @@ vertical-aling:top;
 	text-decoration: none;
 
 	}
+
+  .menuUno .textMenu{
+  transition: 500ms 200ms ease;
+  }
+  .menuUno{
+    animation-name:menuUno;
+    animation-duration: 3s;
+    /* animation-delay:.5s ; */
+  }
+  @keyframes menuUno {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  @keyframes escala {
+    0%{
+      transform: scale(.3);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }
+
+    .menuUno li{ padding-bottom: 9px;  }
+    .menuUno:hover .textMenu{
+       font-size: 30px;
+      font-weight: 700;
+    }
 .logo{
   /* display: inline-block; */
 
@@ -135,7 +167,10 @@ display: none;
      bottom: 0;
      z-index: 2;
      transition: .3s;
+     animation-name: header;
+    animation-timing-function: ease-in;
    }
+
    .header.active{
      left: 0;
    }
@@ -152,18 +187,36 @@ display: none;
      justify-content: center;
      align-items: center;
      cursor: pointer;
-
      position: absolute;
      right:0;
      top:0;
-
+     transition: 500ms 200ms ease;
    }
-  .menuUno li{ padding-bottom: 9px;  }
+   .hamburguesa:hover{
+      width: 90px;
+      height: 90px;
+   }
+
+  .menuUno li{ padding-bottom: 9px; transition: 500ms 200ms ease;
+    animation-name:menuUnoli;
+    animation-duration: 1s;
+  }
+  @keyframes .menuUno li {
+    0%{
+      opacity: 1;
+    }
+    100%{opacity: 0}
+  }
+  .menuUno:hover li{
+    transform: skewX(10deg);
+     font-size: 30px;
+    font-weight: 700;
+  }
 }
                                                                   /* header */
 
 
-                                                                      /* Home */
+
 
 .body {
   margin: 0px;
@@ -222,6 +275,8 @@ display: none;
   margin-left:17px ;
   /* float: right; */
 }
+
+                                                                      /* Home */
 .trabajos{
   display: inline-block;
   margin: auto;
@@ -230,6 +285,8 @@ display: none;
   /* height:inherit; */
   display: flex;
   flex-direction:column ;
+  animation-name:menuUno, escala;
+  animation-duration: 3s, 1s;
 }
 .trabajosDos{
   /* display: inline-block; */
@@ -266,6 +323,10 @@ display: none;
 }
 .laCasaImg{
   width: 323px;
+  transition:width 1s 1s ease;
+}
+.laCasaImg:hover{
+  width: 400px;
 }
 .logoImg{
   width: 172px;
@@ -324,6 +385,8 @@ display: none;
     height:auto;
     display: flex;
     justify-content: center;
+    animation-name:menuUno;
+    animation-duration: 3s;
 }
 .hijo{
   width: 100%;
@@ -444,6 +507,8 @@ display: none;
   height:auto;
   display: flex;
   justify-content: center;
+  animation-name:menuUno;
+  animation-duration: 3s;
 }
 
 .aboutHijoUno{
@@ -502,6 +567,8 @@ display: none;
     height:800px;
     display: flex;
     justify-content: center;
+    animation-name:menuUno;
+    animation-duration: 3s;
 }
 .contactHijoUno{
 width:41%;
