@@ -8,11 +8,11 @@ class About extends Component {
  <div className="aboutPadre">
   <div className='aboutHijoUno'>
     <div className='aboutHijoDosUno '>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et massa sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed non placerat metus. Suspendisse fermentum eu est ac ullamcorper. Quisque porta tincidunt nibh, eu sagittis leo lacinia id. Duis egestas, augue sit amet venenatis.</p>
+<p>Estudiante de Diseño de Medios Interactivos con interés en trabajar en una industria competitiva, que esté preocupada en la creatividad, el conocimiento y la innovación, más específicamente en las áreas de Desarrollo Front-end, Desarrollo de Productos digitales con metodologías ágiles y Ux, como también Diseño de Experiencias Interactivas.</p>
     </div>
   </div>
   <div className='aboutHijoDos'>
-
+ <img src={require('../resources/images/about/julianMadrid.png')} className='imagenJulian'/>
   </div>
  </div>
     );

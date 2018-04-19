@@ -21,7 +21,7 @@ class Home extends Component {
              <article className="trabajo01">
                <h4 className="textinfo">2016</h4>
                <figure className="ilustracion">
-              <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
+              <img className="laCasaImg" src={require("../resources/images/home/ilustracionVerbindung.png")} alt="ilustracionLaCasaDelTurbo"/>
                </figure>
                <div className="descripcion">
                  <h2 className="textProjet">Verdindung</h2>
@@ -29,6 +29,18 @@ class Home extends Component {
                </div>
                </article>
 
+
+
+             <article className="trabajo01">
+               <div className="descripcion">
+                 <h2 className="textProjet">Monucks</h2>
+                 <h3 className="textinfo">business project</h3>
+               </div>
+               <figure className="ilustracion">
+                 <img className="laCasaImg" src={require("../resources/images/home/ilustracionMonuks.png")} alt="ilustracionLaCasaDelTurbo"/>
+               </figure>
+                <h4 className="textinfo">2016</h4>
+               </article>
                <article className="trabajo01">
                  <h4 className="textinfo">2017</h4>
                  <figure className="ilustracion">
@@ -39,40 +51,6 @@ class Home extends Component {
                    <h3 className="textinfo">Movil App</h3>
                  </div>
                  </article>
-
-             <article className="trabajo01">
-               <div className="descripcion">
-                 <h2 className="textProjet">Monucks</h2>
-                 <h3 className="textinfo">business project</h3>
-               </div>
-               <figure className="ilustracion">
-                 <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
-               </figure>
-                <h4 className="textinfo">2016</h4>
-               </article>
-
-               <article className="trabajo01">
-                 <h4 className="textinfo">2017</h4>
-                 <figure className="ilustracion">
-                <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
-                 </figure>
-                 <div className="descripcion">
-                   <h2 className="textProjet">Handle Turtle</h2>
-                   <h3 className="textinfo">parametric</h3>
-                 </div>
-                 </article>
-
-               <article className="trabajo01">
-                 <h4 className="textinfo">2017</h4>
-                 <figure className="ilustracion">
-                <img className="laCasaImg" src={require("../resources/images/home/ilustracionLaCasaDelTurbo.png")} alt="ilustracionLaCasaDelTurbo"/>
-                 </figure>
-                 <div className="descripcion">
-                   <h2 className="textProjet">La casa del turbo</h2>
-                   <h3 className="textinfo">branding</h3>
-                 </div>
-                 </article>
-
 
 
        {/* </div> */}

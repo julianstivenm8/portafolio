@@ -11,7 +11,7 @@ import Projects from './projects/projects.js'
 import Header from './header/header.js'
 import About from './about/about.js'
 import Contact from './contact/contact.js'
-import { BrowserRouter as Router, Route, Link  } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link ,IndexRoute } from 'react-router-dom'
 class App extends Component {
 
 state={
@@ -46,7 +46,7 @@ state={
 
         </section>
 
-        <Route exact path='/' component={Home}/>
+        <Route exact path='/portafolio' component={Home}/>
         <Route path='/projects' component={Projects}/>
         {/* <Route path='/projects' component={Topics}/> */}
         <Route path='/about' component={About}/>

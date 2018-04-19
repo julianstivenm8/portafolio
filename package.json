@@ -2,6 +2,7 @@
   "name": "primer-proyecto",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://julianstivenm8.github.io/portafolio/",
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
@@ -19,6 +20,7 @@
     "webpack-dev-server": "2.9.3"
   },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "popmotion": "^8.1.22",
     "react": "^16.3.1",
     "react-dom": "16.3.1",
@@ -33,6 +35,8 @@
     "swipe-js-iso": "^2.0.4"
   },
   "scripts": {
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

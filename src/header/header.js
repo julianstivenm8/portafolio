@@ -89,7 +89,7 @@ handleGoContact =(event)=>(
           </figure>
           <nav className="menuUno" >
               <li>
-                <Link to='/' >
+                <Link to='/portafolio' >
                 <a className="textMenu" onClick={this.handleGoHome} href="index.html">
                 Home
                 </a>
