@@ -1,44 +1,6 @@
 
 
 
-.slick-slider {
-  margin: 150px auto 0;
-  width: 500px;
-}
-
-.slide {
-  height: 200px;
-  line-height: 200px;
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
-
-  &-one { background: #f00; }
-  &-two { background: #0f0; }
-  &-three { background: #00f; }
-}
-
-.custom-dots {
-  display: flex;
-  margin:  -25px auto 0;
-  list-style: none;
-  padding: 0;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-  align-items: center;
-  color: #000;
-
-  li {
-    margin: 0 5px;
-    cursor: pointer;
-    user-select: none;
-
-    &:not(:first-child):not(:last-child) {
-      flex: 0 0 10px;
-      height: 10px;
-      background: currentColor;
-      border-radius: 50%;
-    }
-  }
+div {
+    color: white;
 }
