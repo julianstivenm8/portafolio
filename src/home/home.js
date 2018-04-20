@@ -8,6 +8,7 @@ import Be from '../icons/components/be.js'
 import Logo from '../icons/components/logo.js'
 import Lsvg from '../icons/components/Lsvg.js'
 import Header from '../header/header.js'
+import { Link } from 'react-router-dom'
 class Home extends Component {
 
   render() {
@@ -20,9 +21,11 @@ class Home extends Component {
 
              <article className="trabajo01">
                <h4 className="textinfo">2016</h4>
+               <Link to='/projects' >
                <figure className="ilustracion">
               <img className="laCasaImg" src={require("../resources/images/home/ilustracionVerbindung.png")} alt="ilustracionLaCasaDelTurbo"/>
                </figure>
+             </Link>
                <div className="descripcion">
                  <h2 className="textProjet">Verdindung</h2>
                  <h3 className="textinfo">game</h3>

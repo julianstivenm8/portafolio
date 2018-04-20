@@ -4,9 +4,9 @@ import Lsvg from '../icons/components/Lsvg.js';
 import Header from '../header/header.js';
 import { Route, Link  } from 'react-router-dom';
 import Be from '../icons/components/be.js'
-// import slick from 'slick-carousel';
+
 // import Slider from './slider/slider.js'
-import Slice  from './slice.js'
+// import DemoCarousel  from './slice.js'
 
 const Topic = ({ match }) => (
   <div >
@@ -22,26 +22,14 @@ const Projects = ({ match }) => (
       <div className='hijoDosUno'>
         {/* <img src={Imagen} alt="ilustracionLaCasaDelTurbo"/> */}
         {/* <DemoCarousel /> */}
-{/* {$(document).ready(function(){
-      $('.your-class').slick({
-        settingName: setting-value
-      });
-    });} */}
-        {/* <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
-          <div><h3>1</h3></div>
-          <div><h3>2</h3></div>
-          <div><h3>3</h3></div>
-          <div><h3>4</h3></div>
-          <div><h3>5</h3></div>
-          <div><h3>6</h3></div>
-        </div> */}
-
-{/*/////////////////////////////////////////////////////////// reina el puto Slide, lo quitas y queda normal , esta mal escrito :v */}
-<Slice/>
 
 
 
- <img src={require('../resources/images/project/portafolioWeb.jpg')} className='imagenPrincipal'/>
+{/* {this.Slider()} */}
+
+
+
+ <img src={require('../resources/images/project/portafolioWeb.jpg')} className='imagenPrincipal'/> 
 </div>
 <div className='hijoDosDos '>
   <div className='choose'></div>
