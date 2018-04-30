@@ -1,0 +1,197 @@
+.header{
+  width: 100%;
+  height: auto;
+  display: flex;
+
+
+  animation-name:menuUno;
+  animation-duration: 1s;
+}
+.headerDos{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.headerProjects{
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+.headerAbout{
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+.headerContact{
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.menuUno{
+  display: inline-block;
+  list-style: none;
+  transition: 1s  ease;
+}
+.imgLogo{
+  width: 80%;
+  height: auto;
+}
+.imgLogoPeque{
+  left:0;
+  width:50%;
+  height: auto;
+}
+.menuUno li a {
+  text-decoration: none;
+
+}
+
+.menuUno .textMenu{
+  transition: 500ms 200ms ease;
+}
+.menuUno{
+  animation-name:menuUno;
+  animation-duration: 3s;
+  /* animation-delay:.5s ; */
+}
+.headerProjects .menuUno{
+  padding-left: 7%;
+}
+.headerAbout .menuUno{
+  padding-right: 7%;
+}
+.headerContact .menuUno{
+  padding-right: 3%;
+  padding-left: 3%;
+}
+@keyframes menuUno {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes escala {
+  0%{
+    transform: scale(.3);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.menuUno li{ padding-bottom: 9px;  }
+.menuUno:hover .textMenu{
+  font-size: 30px;
+  font-weight: 700;
+}
+.logoPeque{
+
+border-color: white;
+
+}
+.aboutPadre{
+  height:auto;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutHijoUno{
+
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 1.5;
+}
+
+.logoCel{
+  display:none;
+}
+
+.hamburguesa{
+  display: none;
+
+}
+.headerCell{
+  display: none;
+}
+
+@media screen and (max-width: 740px) {
+
+.logoPeque{display: none;}
+  .logo{display:none;}
+  .logoCel{display:inline-block; width: 100;}
+}
+@media screen and (max-width: 600px) {
+  .header  {
+    flex-direction: column;
+    background-color: rgba(10, 17, 36, .8);
+    position:absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    right:  100%;
+    bottom: 0;
+    z-index: 2;
+    transition: .3s;
+    animation-name: header;
+    animation-timing-function: ease-in;
+  }
+  .headerDos{
+    flex-direction: column;
+  }
+
+  .header.active{
+    left: 0;
+  }
+  .headerCell{
+    display:inline;
+  }
+  .hamburguesa{
+    width: 75px;
+    height: 75px;
+    line-height: 40px;
+    text-align: center;
+    display:flex;
+    background: #070D19;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right:0;
+    top:0;
+    transition: 500ms 200ms ease;
+  }
+  .hamburguesa:hover{
+    width: 90px;
+    height: 90px;
+  }
+
+  .menuUno li{ padding-bottom: 9px; transition: 500ms 200ms ease;
+    animation-name:menuUnoli;
+    animation-duration: 1s;
+  }
+  @keyframes .menuUno li {
+    0%{
+      opacity: 1;
+    }
+    100%{opacity: 0}
+  }
+  .menuUno:hover li{
+    transform: skewX(10deg);
+    font-size: 30px;
+    font-weight: 700;
+  }
+}
+/* header */

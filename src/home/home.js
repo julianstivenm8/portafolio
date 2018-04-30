@@ -21,11 +21,11 @@ class Home extends Component {
 
              <article className="trabajo01">
                <h4 className="textinfo">2016</h4>
-               <Link to='/projects' >
+               <Link to='/projects'>
                <figure className="ilustracion">
               <img className="laCasaImg" src={require("../resources/images/home/ilustracionVerbindung.png")} alt="ilustracionLaCasaDelTurbo"/>
                </figure>
-             </Link>
+</Link>
                <div className="descripcion">
                  <h2 className="textProjet">Verdindung</h2>
                  <h3 className="textinfo">game</h3>
@@ -39,9 +39,11 @@ class Home extends Component {
                  <h2 className="textProjet">Monucks</h2>
                  <h3 className="textinfo">business project</h3>
                </div>
+                <Link to='/projectsMonucks'>
                <figure className="ilustracion">
                  <img className="laCasaImg" src={require("../resources/images/home/ilustracionMonuks.png")} alt="ilustracionLaCasaDelTurbo"/>
                </figure>
+               </Link>
                 <h4 className="textinfo">2016</h4>
                </article>
                <article className="trabajo01">

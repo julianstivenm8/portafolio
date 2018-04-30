@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
+import './header.css';
 import Logo from '../icons/components/logo.js';
 import MenuHamburguesa from '../icons/components/menu.js';
 import Xmenu from '../icons/components/xMenu.js';
@@ -13,13 +14,12 @@ class Header extends Component {
     modalVisible: false,
     burgerEnter: 'burgerEnter',
     backMenu: -100,
-    changeView:0,
+    headerControl:0,
   }
 
 handleOpenClick = (event) =>{
   this.setState({
       modalVisible:true,
-      // burgerEnter:'active',
       backMenu: 0 ,
   })
 
@@ -29,28 +29,237 @@ handleCloseClick =(event)=>{
   this.setState({
     modalVisible:false,
       backMenu: -100 ,
+      headerControl:0
   })
 }
-handleGoHome =(event)=>{
-  this.setState({
-    changeView:0,
-  })
+moverHome(){
+  try{
+    this.setState({headerControl:0});
+    console.log(this.state.headerControl);
+  }catch(error){
+    console.log(error)
+  }
 }
-handleGoProjects =(event)=>{
-  this.setState({
-    changeView:1,
-  })
+moverProjects(){
+  try{
+    this.setState({headerControl:1});
+    console.log(this.state.headerControl);
+  }catch(error){
+    console.log(error)
+  }
 }
-handleGoAbout =(event)=>{
-  this.setState({
-    changeView:2,
-  })
+moverAbout(){
+  try{
+    this.setState({headerControl:2});
+    console.log(this.state.headerControl);
+  }catch(error){
+    console.log(error)
+  }
 }
-handleGoContact =(event)=>(
-  this.setState({
-    changeView:3,
-  })
-)
+moverContact(){
+  try{
+    this.setState({headerControl:3});
+    console.log(this.state.headerControl);
+  }catch(error){
+    console.log(error)
+  }
+}
+
+aparece(){
+  if (this.state.headerControl == 0) {
+    return  <div className="headerDos">
+    <nav className="menuUno" >
+        <li>
+          <Link to='/portafolio' >
+          <a className="textMenu" onClick={this.moverHome.bind(this)} href="index.html">
+          Home
+          </a>
+        </Link>
+        </li>
+
+    </nav>
+    <nav className="menuUno">
+        <li>
+          <Link to='/projects' >
+            <a className=" textMenu" onClick={this.moverProjects.bind(this)}  href="projects.html">
+            Projects
+            </a>
+          </Link>
+        </li>
+    </nav>
+    <figure className="logo">
+      <Logo
+        height={150-40}
+        width={300-40}
+        viewBox="0 0 300 150"
+        color="white"
+      />
+    </figure>
+    <nav className="menuUno">
+        <li>
+          <Link to='/about' >
+            <a className="textMenu" onClick={this.moverAbout.bind(this)}  href="about.html">
+            About
+            </a>
+          </Link>
+        </li>
+          </nav>
+          <nav className="menuUno">
+        <li>
+          <Link to='/contact'>
+            <a  className="textMenu" onClick={this.moverContact.bind(this)}  href="contact.html">
+            Contact
+            </a>
+          </Link>
+        </li>
+      </nav>
+ </div>
+  } else if (this.state.headerControl == 1) {
+    return  <div className="headerProjects">
+      <figure className="logoPeque">
+        <LogoPeque
+          size={100}
+          color="white"
+        />
+      </figure>
+      <div className="headerProjects">
+    <nav className="menuUno" >
+        <li>
+          <Link to='/portafolio' >
+          <a className="textMenu" onClick={this.moverHome.bind(this)} href="index.html">
+          Home
+          </a>
+        </Link>
+        </li>
+    </nav>
+    <nav className="menuUno">
+        <li>
+          <Link to='/projects' >
+            <a className=" textMenu" onClick={this.moverProjects.bind(this)}  href="projects.html">
+            Projects
+            </a>
+          </Link>
+        </li>
+    </nav>
+
+    <nav className="menuUno">
+        <li>
+          <Link to='/about' >
+            <a className="textMenu" onClick={this.moverAbout.bind(this)}  href="about.html">
+            About
+            </a>
+          </Link>
+        </li>
+          </nav>
+          <nav className="menuUno">
+        <li>
+          <Link to='/contact'>
+            <a  className="textMenu" onClick={this.moverContact.bind(this)}  href="contact.html">
+            Contact
+            </a>
+          </Link>
+        </li>
+      </nav>
+      </div>
+  </div>
+  } else if (this.state.headerControl == 2) {
+    return  <div className="headerAbout">
+      <figure className="logoPeque">
+        <LogoPeque
+          size={100}
+          color="white"
+        />
+      </figure>
+      <div className="headerAbout">
+    <nav className="menuUno" >
+        <li>
+          <Link to='/portafolio' >
+          <a className="textMenu" onClick={this.moverHome.bind(this)} href="index.html">
+          Home
+          </a>
+        </Link>
+        </li>
+    </nav>
+    <nav className="menuUno">
+        <li>
+          <Link to='/projects' >
+            <a className=" textMenu" onClick={this.moverProjects.bind(this)}  href="projects.html">
+            Projects
+            </a>
+          </Link>
+        </li>
+    </nav>
+
+    <nav className="menuUno">
+        <li>
+          <Link to='/about' >
+            <a className="textMenu" onClick={this.moverAbout.bind(this)}  href="about.html">
+            About
+            </a>
+          </Link>
+        </li>
+          </nav>
+          <nav className="menuUno">
+        <li>
+          <Link to='/contact'>
+            <a  className="textMenu" onClick={this.moverContact.bind(this)}  href="contact.html">
+            Contact
+            </a>
+          </Link>
+        </li>
+      </nav>
+      </div>
+    </div>
+    } else if (this.state.headerControl == 3) {
+      return  <div className="headerContact">
+        <figure className="logoPeque">
+          <LogoPeque
+            size={100}
+            color="white"
+          />
+        </figure>
+        <div className="headerContact">
+      <nav className="menuUno" >
+          <li>
+            <Link to='/portafolio' >
+            <a className="textMenu" onClick={this.moverHome.bind(this)} href="index.html">
+            Home
+            </a>
+          </Link>
+          </li>
+      </nav>
+      <nav className="menuUno">
+          <li>
+            <Link to='/projects' >
+              <a className=" textMenu" onClick={this.moverProjects.bind(this)}  href="projects.html">
+              Projects
+              </a>
+            </Link>
+          </li>
+      </nav>
+
+      <nav className="menuUno">
+          <li>
+            <Link to='/about' >
+              <a className="textMenu" onClick={this.moverAbout.bind(this)}  href="about.html">
+              About
+              </a>
+            </Link>
+          </li>
+            </nav>
+            <nav className="menuUno">
+          <li>
+            <Link to='/contact'>
+              <a  className="textMenu" onClick={this.moverContact.bind(this)}  href="contact.html">
+              Contact
+              </a>
+            </Link>
+          </li>
+        </nav>
+        </div>
+      </div>
+      }
+}
 
   render() {
 
@@ -87,46 +296,9 @@ handleGoContact =(event)=>(
               color="white"
             />
           </figure>
-          <nav className="menuUno" >
-              <li>
-                <Link to='/portafolio' >
-                <a className="textMenu" onClick={this.handleGoHome} href="index.html">
-                Home
-                </a>
-              </Link>
-              </li>
 
-          </nav>
-          <nav className="menuUno">
-              <li>
-                <Link to='/projects' >
-                  <a className=" textMenu" onClick={this.handleGoProjects} href="projects.html">
-                  Projects
-                  </a>
-                </Link>
-              </li>
-          </nav>
-          <figure className="logo">
-            <img className="imgLogo" src={require("../resources/images/home/logoGrande.png")} alt="julianMadrid"/>
-          </figure>
-          <nav className="menuUno">
-              <li>
-                <Link to='/about' >
-                  <a className="textMenu" onClick={this.handleGoAbout} href="about.html">
-                  About
-                  </a>
-                </Link>
-              </li>
-                </nav>
-                <nav className="menuUno">
-              <li>
-                <Link to='/contact'>
-                  <a  className="textMenu" onClick={this.handleGoContacts} href="contact.html">
-                  Contact
-                  </a>
-                </Link>
-              </li>
-            </nav>
+
+  {this.aparece()}
 
         </header>
       {/* } */}

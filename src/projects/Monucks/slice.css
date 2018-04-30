@@ -1,0 +1,30 @@
+.sliceRoot{
+  flex: 1;
+  margin: 0;
+   flex-grow: 4;
+   width: 91vh;
+     height: auto;
+}
+.imagen{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction: column;
+  flex-grow: 4;
+}
+
+@media all and (max-width: 1140px) {
+  .imagen  { margin-top: 42vh;}
+}
+
+@media all and (max-width: 800px) {
+  .sliceRoot  { width:70vh;}
+}
+/* width: 100%;
+ height: auto;
+  border: 1px solid white;
+ display: flex;
+ justify-content:center;
+ flex-direction: column; */

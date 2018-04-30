@@ -5,37 +5,29 @@ import Projectlist from './projectsView/projectlist.js';
 import data from './api.json';
 import In from './icons/components/in.js'
 import Be from './icons/components/be.js'
+import FlechaAbajo from './icons/components/flechaAbajo.js'
 import Logo from './icons/components/logo.js'
 import Home from './home/home.js'
-import Projects from './projects/projects.js'
+import Projects from './projects'
+import ProjectsMonucks from './projects/monucks'
+
 import Header from './header/header.js'
 import About from './about/about.js'
 import Contact from './contact/contact.js'
 import { BrowserRouter as Router, Route, Link ,IndexRoute } from 'react-router-dom'
 class App extends Component {
-
-state={
-
-}
-
-
-
-
+  constructor(props){
+    super(props)
+    this.state={
+      headerControl:4,
+    }
+  }
   render() {
-
     return (
-
       <div className="App">
-
-        {/* <GoTo
-            handleSummit={this.handleSummit}
-        /> */}
         <div className="wrapper">
-
-          {/*  */}
           <Router>
            <div>
-
         <Header/>
 
         <div className="body">
@@ -48,6 +40,7 @@ state={
 
         <Route exact path='/portafolio' component={Home}/>
         <Route path='/projects' component={Projects}/>
+        <Route path='/projectsMonucks' component={ProjectsMonucks}/>
         {/* <Route path='/projects' component={Topics}/> */}
         <Route path='/about' component={About}/>
         <Route path='/contact' component={Contact}/>
@@ -61,6 +54,11 @@ state={
         <figure className="in">
         <In size={23} color="white" />
         </figure>
+          <Link to='/projectsMonucks' >
+        <figure className="in">
+        <FlechaAbajo size={23} color="white" />
+        </figure>
+      </Link>
         </div>
         </section>
         {/* <Projectlist data={data}/> */}
