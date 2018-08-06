@@ -10,6 +10,7 @@
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#0A1124",
-  "background_color": "#0A1124"
+  "theme_color": "#C4C4C4",
+  "background_color": "#C4C4C4",
+"box-shadow": "inset 0px 0px 82px rgba(0, 0, 0, 0.572)"
 }

@@ -1,11 +1,21 @@
 {
-  "main.css": "static/css/main.d2a2b8ed.css",
-  "main.css.map": "static/css/main.d2a2b8ed.css.map",
-  "main.js": "static/js/main.24c833f9.js",
-  "main.js.map": "static/js/main.24c833f9.js.map",
+  "main.css": "static/css/main.3d367355.css",
+  "main.css.map": "static/css/main.3d367355.css.map",
+  "main.js": "static/js/main.f824ae5b.js",
+  "main.js.map": "static/js/main.f824ae5b.js.map",
+  "static\\media\\01.png": "static/media/01.1f3126f3.png",
+  "static\\media\\02.png": "static/media/02.8c2e2e31.png",
+  "static\\media\\03.png": "static/media/03.54a05a14.png",
+  "static\\media\\04.png": "static/media/04.9c6e5ba0.png",
+  "static\\media\\05.png": "static/media/05.7958d3b8.png",
+  "static\\media\\06.png": "static/media/06.28f5fb8a.png",
+  "static\\media\\07.png": "static/media/07.164aba8e.png",
+  "static\\media\\08.png": "static/media/08.c3e97dcb.png",
+  "static\\media\\09.png": "static/media/09.582f597e.png",
+  "static\\media\\10.png": "static/media/10.e4aa9954.png",
+  "static\\media\\11.png": "static/media/11.17156ae1.png",
   "static\\media\\ilustracionLaCasaDelTurbo.png": "static/media/ilustracionLaCasaDelTurbo.60d2d54f.png",
   "static\\media\\ilustracionMonuks.png": "static/media/ilustracionMonuks.8b708692.png",
   "static\\media\\ilustracionVerbindung.png": "static/media/ilustracionVerbindung.b58550c6.png",
-  "static\\media\\julianMadrid.png": "static/media/julianMadrid.fe721ec0.png",
-  "static\\media\\portafolioWeb.jpg": "static/media/portafolioWeb.6a438eb3.jpg"
+  "static\\media\\julianMadrid.png": "static/media/julianMadrid.4461c5ff.png"
 }
