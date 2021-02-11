@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: sans-serif;
   background: #0A1124;
-  background-image: url('./resources/images/home/background.png');
+  /* background-image: url('./resources/images/home/background.png'); */
+  /* background-image: url('./resources/images/about/aboutBack.jpg'); */
     background-size: 100%;
 }

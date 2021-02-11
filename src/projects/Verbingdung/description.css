@@ -1,0 +1,109 @@
+
+.descripcionProjecto{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 2;
+}
+.hijoDosUno {
+  flex-grow: 1;
+  justify-content:center;
+  align-content: center;
+}
+.imagenPrincipal{
+  width: 100%;
+  height: auto;
+}
+
+
+
+.tituloProjecto {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.estiloFuente{
+  color: white;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  list-style: none;
+  text-decoration: none;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+.estiloFuente h3 {
+  /* text-decoration: none;
+  list-style: none; */
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+
+}
+
+.estiloFuente h2 {
+    font-style: italic;
+}
+.fecha{
+  color: white;
+  margin-left: 56px;
+  list-style: none;
+  text-decoration: none;
+}
+.numberStep{
+  color: #858a93;
+  margin-left: 56px;
+  font-style: italic;
+  list-style: none;cursor: pointer;
+  text-decoration: none;transition: .8s  ease;
+}
+.numberStep:hover{
+  color: white;
+}
+.pasosProceso {
+  flex-grow: 1;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.hijoTresTres {
+  color: white;
+  flex-grow: 5;
+  font-size: 28px;
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+@media all and (max-width: 1366px) {
+  /* .imagenPrincipal    { width:750px; } */
+  .hijoTresTres {  font-size: 21px;}
+}
+
+@media all and (max-width: 1140px) {
+  /* .imagenPrincipal    { width:400px; } */
+  .padre  { flex-direction: column;}
+  .estiloFuente  {  justify-content:center; }
+  .hijoTresTres {  font-size: 17px;}
+}
+@media screen and (max-width: 900px) {
+  .fecha  {  font-size: 19px;}
+  .numberStep  {  font-size: 19px;}
+  .hijoTresTres {  font-size: 19px;}
+}
+@media screen and (max-width: 740px) {
+  .fecha  {  font-size: 16px;}
+  .numberStep  {  font-size: 16px;}
+  .hijoTresTres {  font-size: 16px;}
+}
